@@ -2,7 +2,7 @@
 
 int main(void){
     int q, a, b, d;
-    char *s;
+    char s[100000];
     scanf("%d", &q);
     scanf("%s", s);
     
@@ -17,5 +17,5 @@ int main(void){
         }
     }
 
-    printf("%s\n", s);
+    printf("%s", s);
 }

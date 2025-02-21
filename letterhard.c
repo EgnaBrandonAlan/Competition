@@ -2,7 +2,7 @@
 
 int main(void){
     int q, T, a, b, d, k;
-    char *s;
+    char s[100000];
     scanf("%d", &q);
     scanf("%s", s);
 
@@ -19,7 +19,10 @@ int main(void){
             }
         } else if (T == 1){
             scanf(" %d", &k);
-            printf("%c\n", s[k]);
+            printf("%c", s[k]);
+            if (i < q - 1){
+                printf("\n");
+            }
         }
     }
 }
